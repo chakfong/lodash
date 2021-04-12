@@ -2,12 +2,12 @@
  * Used to match `RegExp`
  * [syntax characters](http://ecma-international.org/ecma-262/7.0/#sec-patterns).
  */
-const reRegExpChar = /[\\^$.*+?()[\]{}|]/g
+const reRegExpChar = /[\\^$.*+?()[\]{}|-]/g
 const reHasRegExpChar = RegExp(reRegExpChar.source)
 
 /**
  * Escapes the `RegExp` special characters "^", "$", "\", ".", "*", "+",
- * "?", "(", ")", "[", "]", "{", "}", and "|" in `string`.
+ * "?", "(", ")", "[", "]", "{", "}", "|", and "-" in `string`.
  *
  * @since 3.0.0
  * @category String
